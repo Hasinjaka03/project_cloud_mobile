@@ -17,7 +17,7 @@ const Inscription: React.FC = () => {
     donnee.append('email',email);
     donnee.append('mdp',password);
   
-    const response = await fetch('http://localhost:8080/api/utilisateur/Inscription', {
+    const response = await fetch('https://tranquil-pie-production.up.railway.app/api/utilisateur/Inscription', {
       method: 'POST',
       body: donnee
     });

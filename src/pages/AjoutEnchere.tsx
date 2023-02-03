@@ -22,7 +22,7 @@ const AjoutEnchere: React.FC = () => {
     { 
      const headers = new Headers();
      headers.append('token',token);
-     const response = await fetch(`http://localhost:8080/api/enchere/AjoutEnchere`, {
+     const response = await fetch(`https://tranquil-pie-production.up.railway.app/api/enchere/AjoutEnchere`, {
       method: 'POST',
       headers: headers,
       body: donnee

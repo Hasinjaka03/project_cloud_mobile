@@ -14,7 +14,7 @@ extends RouteComponentProps<{
 
 
 const Detail: React.FC<DetailProps> = ({match}) => {
- const { data, error } = useData("http://localhost:8080/mouvement/"+match.params.id);
+ const { data, error } = useData("https://tranquil-pie-production.up.railway.app/mouvement/"+match.params.id);
  // console.log("NIBJO");
   console.log(data);
 

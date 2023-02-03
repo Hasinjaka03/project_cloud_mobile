@@ -11,7 +11,7 @@ const token = localStorage.getItem('token');
 if(token){
 const headers = new Headers();
 headers.append('token', token);
-fetch(`http://localhost:8080/api/enchere/ListeEnchereUser`, {
+fetch(`https://tranquil-pie-production.up.railway.app/api/enchere/ListeEnchereUser`, {
   headers: headers
 })
   .then(res => res.json())

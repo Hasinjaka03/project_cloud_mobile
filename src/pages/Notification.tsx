@@ -24,7 +24,7 @@ const NotificationsPage = () => {
  // ]);
 
 
- const {data,error}= useData("http://localhost:8080/api/enchere/listeEnchereTerminer");
+ const {data,error}= useData("https://tranquil-pie-production.up.railway.app/api/enchere/listeEnchereTerminer");
 
 console.log("ary le api faharoa"+data);
 

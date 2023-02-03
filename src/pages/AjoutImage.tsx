@@ -36,7 +36,7 @@ const AjoutImage: React.FC = () => {
       const headers = new Headers();
       headers.append('token', token);
 
-      const response = await fetch(`http://localhost:8080/api/enchere/AjouterPhoto/${idproduit}`, {
+      const response = await fetch(`https://tranquil-pie-production.up.railway.app/api/enchere/AjouterPhoto/${idproduit}`, {
         method: 'POST',
         headers: headers,
         body: donnee
